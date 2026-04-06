@@ -1,16 +1,36 @@
-# inclass12
+# Inventory Management App with Firestore
 
-A new Flutter project.
+## Overview
+This Flutter app manages inventory items using Firebase Firestore. It supports real-time CRUD operations so the UI updates automatically when data changes.
 
-## Getting Started
+## Features
+- Add inventory items
+- View live inventory using StreamBuilder
+- Edit existing items
+- Delete items
+- Validation for empty, numeric, and invalid inputs
 
-This project is a starting point for a Flutter application.
+## Enhanced Features
+1. Search items by name or category
+2. Filter items by category
+3. Low stock indicator for items with quantity 5 or less
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Used
+- Flutter
+- Firebase Core
+- Cloud Firestore
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Architecture
+- `models/` for data classes
+- `services/` for Firestore CRUD logic
+- `widgets/` for reusable UI form dialog
+- `main.dart` for app setup and page structure
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Validation
+- Prevents empty fields
+- Ensures quantity is a whole number
+- Ensures price is numeric
+- Prevents negative values
+
+## Reflection
+See reflection document submitted with this project.
